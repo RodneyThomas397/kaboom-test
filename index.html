@@ -27,6 +27,16 @@
 		onKeyPress("space", () => {
 			player.jump()
 		})
+
+		// FLOOR
+		add([
+    		rect(width(), 48),
+    		pos(0, height() - 48),
+    		outline(4),
+    		area(),
+    		solid(),
+    		color(127, 200, 255),
+		])
 	</script>
 </body>
 </html>
