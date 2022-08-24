@@ -25,7 +25,9 @@
 		])
 
 		onKeyPress("space", () => {
-			player.jump()
+			if (bean.isGrounded()) {
+				player.jump();
+			}
 		})
 
 		// FLOOR
